@@ -1,0 +1,13 @@
+<div class="container">
+      <ul class="list-group" ng-repeat="mobile in mobiles | filter : searchvalue">
+          <li class="list-group-item row">
+            <div class="col-md-4"><image src="{{mobile.image}}" height="300px"/></div>
+            <div class="col-md-4 searchitem"><h3 class="blueh3">{{mobile.name}}</h3></div>
+            <div class="col-md-4 searchitem">
+                <div ng-repeat="review in mobile.reviews" class="rating">
+                  <div star-rating-mobile ng-model="review.rate" ></div>
+                </div>
+            </div>
+         </li>
+     </ul>
+</div>

@@ -1,0 +1,20 @@
+<div class="container">
+  <div>
+      <h3>{{number | round : 3}}</h3>
+      <h1 id="test"></h1>
+      <div class="row">
+        <div class="col-sm-6 col-md-4"ng-repeat="product in products">
+          <div class="thumbnail">
+            <img src="{{product.images}}" alt="pic">
+            <div class="caption">
+              <h3>{{product.name}}</h3>
+              <p>{{product.price | currency:'EGP'}}</p>
+              <p>{{product.description}}</p>
+              <div star-rating rating="{{product.rate}}"></div>
+              <p><a href="#!/singleproduct/{{$index}}" class="btn btn-primary" role="button">Go to details</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

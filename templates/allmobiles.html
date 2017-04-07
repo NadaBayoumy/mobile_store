@@ -1,0 +1,17 @@
+<div class="container">
+  <div>
+    <h1 id="test"></h1>
+      <div class="row">
+        <div class="col-sm-6 col-md-4" ng-repeat="mobile in mobiles">
+          <div class="thumbnail" style='height:469px'>
+            <img src="{{mobile.image}}" alt="pic" style='height:300px'>
+            <div class="caption">
+              <h3>{{mobile.name}}</h3>
+              <p>Lorem Ipsum ironic typesetting, remaining essentially unchanged.</p>
+              <p><a href="#!/singlemobile/{{$index}}" class="btn btn-primary" role="button">See Details</a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
